@@ -1,0 +1,38 @@
+### premiere requete
+GET https://api.ipify.org/
+
+### requet sans filtrage
+GET https://http-practice.herokuapp.com/wilders
+
+### requet avec filtrage
+GET https://http-practice.herokuapp.com/wilders?page=2&language=PHP
+
+### requete POST
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/json
+
+{
+  "name": "Sonia Boutboul",
+  "language": "PHP"
+}
+
+### requete POST
+POST https://http-practice.herokuapp.com/wilders
+Content-Type: application/x-www-form-urlencoded
+
+name=Don%20Diego&language=PHP
+
+### requete lecture Sonia Boutboul
+GET https://http-practice.herokuapp.com/wilders/1646576
+
+### modif Sonia
+PUT https://http-practice.herokuapp.com/wilders/1646576
+Content-Type: application/json
+
+{
+  "name": "Roger Boutboul",
+  "language": "PHP"
+}
+
+### requete suppression roger
+DELETE https://http-practice.herokuapp.com/wilders/1646576
